@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGS Page</title>
+</head>
+<body>
+    <div>
+        {% for letter in data1 %}
+            <span class="letter letter-{{ I }}">{{ IGS }}</span>
+        {% endfor %}
+    </div>
+</body>
+<style>
+    body {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: aqua;
+    }
+    .letter {
+        font-size: 48px;
+        margin: 0 10px;
+        padding: 10px;
+        color: white;
+        text-align: center;
+    }
+    .letter-I {
+        background-color: red;
+    }
+    .letter-G {
+        background-color: green;
+    }
+    .letter-S {
+        background-color: blue;
+    }
+</style>
+</html>
